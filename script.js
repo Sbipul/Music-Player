@@ -33,6 +33,7 @@ const playAudio = () => {
 const playMusic = () => {
     isPlaying = true;
     music.play();
+    audioImage.classList.add('rotation')
     toggleBtn.classList.add('fa-pause-circle','text-primary');
     toggleBtn.classList.remove('fa-play','text-success');
     
@@ -45,6 +46,7 @@ const playMusic = () => {
 const pauseMusic = () => {
     isPlaying = false;
     music.pause();
+    audioImage.classList.remove('rotation')
     toggleBtn.classList.add('fa-play','text-success');
     toggleBtn.classList.remove('fa-pause-circle','text-primary');
 }

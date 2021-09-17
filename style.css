@@ -1,6 +1,43 @@
+body{
+    background: linear-gradient(45deg,rgb(0, 153, 255),rgb(46, 109, 46))
+}
+@keyframes rotation {
+    from   {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+.My-card {
+    padding: 1rem;
+    background: linear-gradient(45deg,rgb(97, 238, 160), rgb(241, 101, 253));;
+}
+.icon {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+}
+.icon2 {
+    font-size: 3rem;
+    color: rgb(247, 52, 149);
+    padding: 1rem;
+}
 .Image {
-    height: 400px;
-    width: 100%;
+    height: 280px;
+    width: 280px;
     margin: 0 auto;
     overflow: hidden;
 }
+#Image {
+    margin-left: 10%;
+    width: 80%;
+}
+.rotation {
+    animation: rotation 10s linear infinite;
+}
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 100% !important;
+    }
+  }
