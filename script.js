@@ -34,8 +34,8 @@ const playMusic = () => {
     isPlaying = true;
     music.play();
     audioImage.classList.add('rotation')
-    toggleBtn.classList.add('fa-pause-circle','text-primary');
-    toggleBtn.classList.remove('fa-play','text-success');
+    toggleBtn.classList.add('fa-pause-circle');
+    toggleBtn.classList.remove('fa-play');
     
 }
 //////////////////////////////////////////// play button ends here /////////////////////////////////////////////
@@ -47,8 +47,8 @@ const pauseMusic = () => {
     isPlaying = false;
     music.pause();
     audioImage.classList.remove('rotation')
-    toggleBtn.classList.add('fa-play','text-success');
-    toggleBtn.classList.remove('fa-pause-circle','text-primary');
+    toggleBtn.classList.add('fa-play');
+    toggleBtn.classList.remove('fa-pause-circle');
 }
 //////////////////////////////////////////// play button ends here /////////////////////////////////////////////
 
