@@ -11,6 +11,8 @@ const imgList = ['img/alo alo.jpg','img/ek paye.jpg','img/artcell.jpg','img/artc
 
 const metal = () => {
     alert('This feature will come soon.Please wait few days.Thanked by bipul chandro roy');
+    // musicList = ['new song','another new song','last another new song'];
+    // and etay click korle 8 no line er je array ta ache seta change hoye jabe 
 }
 const soft = () => {
     alert('Already selected')
@@ -79,7 +81,7 @@ const preBtn = () => {
     music.play();
     toggleBtn.classList.remove('fa-play');
     toggleBtn.classList.add('fa-pause-circle');
-    audioImage.classList.remove('rotation')
+    audioImage.classList.add('rotation')
 
 }
 //////////////////////////////////////////// prev button ends here /////////////////////////////////////////////
