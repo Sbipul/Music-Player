@@ -43,13 +43,15 @@ a{
     width: 280px;
     margin: 0 auto;
     overflow: hidden;
+    border-radius: 100%;
+    margin-top: 32px;
 }
 #Image {
-    margin-left: 10%;
-    width: 80%;
+    width: 100%;
+    height: 100%;
 }
 .rotation {
-    animation: rotation 10s linear infinite;
+    animation: rotation 20s linear infinite;
 }
 ul{
     display: flex;
@@ -63,12 +65,10 @@ ul{
     }
     .My-card{
         height: 100vh !important;
+        border-radius: 0;
     }
     .Padding{
         padding:0;
-    }
-    .Image {
-        padding-top: 2rem;
     }
     .cardBody {
     padding-top: 5rem;

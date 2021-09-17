@@ -5,21 +5,16 @@ let audioPlayer = document.getElementById('audioPlayer');
 let audioImage = document.getElementById('Image');
 let songName = document.getElementById('songName');
 let songIndex = 0;
-let musicList = ['aud/Alo-Alo_Tahsan.mp3','aud/ek-paye-nupur.mp3','aud/Dhusor somoy.mp3','aud/Dukkho_Bilash.mp3','aud/Epitaph.mp3'];
-const imgList = ['img/alo alo.jpg','img/ek paye.jpg','img/artcell.jpg','img/artcell.jpg','img/sonar bangla.jpg'];
+let musicList = ['aud/Alo-Alo_Tahsan.mp3','aud/ek-paye-nupur.mp3','aud/Dhusor somoy.mp3','aud/Dukkho_Bilash.mp3','aud/Epitaph.mp3','aud/Bojhena se bojhena.mp3'];
+const imgList = ['img/alo alo.jpg','img/ek paye.jpg','img/artcell.jpg','img/artcell.jpg','img/sonar bangla.jpg','img/bojhena.jpg'];
 
 
 const metal = () => {
-    // musicList = ['aud/Dhusor somoy.mp3','aud/Dukkho_Bilash.mp3'];
-    alert('This feature will come soon.Plese wait few days.thanked by bipul chandro roy')
+    alert('This feature will come soon.Please wait few days.Thanked by bipul chandro roy');
 }
 const soft = () => {
-    // musicList = ['aud/Dhusor somoy.mp3','aud/Dukkho_Bilash.mp3'];
     alert('Already selected')
 }
-// let newList = metal();
-// musicList = newList;
-
 
 //////////////////////////// music play & pause function starts here //////////////////////////////////////////
 const playAudio = () => {
@@ -64,6 +59,8 @@ const nextBtn = () => {
     audioImage.setAttribute('src',imgList[songIndex]);
     songName.innerText = musicList[songIndex]
     music.play();
+    toggleBtn.classList.remove('fa-play');
+    toggleBtn.classList.add('fa-pause-circle');
 }
 //////////////////////////////////////////// next button ends here /////////////////////////////////////////////
 
@@ -79,5 +76,8 @@ const preBtn = () => {
     audioImage.setAttribute('src',imgList[songIndex]);
     songName.innerText = musicList[songIndex]
     music.play();
+    toggleBtn.classList.remove('fa-play');
+    toggleBtn.classList.add('fa-pause-circle');
+
 }
 //////////////////////////////////////////// prev button ends here /////////////////////////////////////////////
