@@ -61,6 +61,7 @@ const nextBtn = () => {
     music.play();
     toggleBtn.classList.remove('fa-play');
     toggleBtn.classList.add('fa-pause-circle');
+    audioImage.classList.add('rotation')
 }
 //////////////////////////////////////////// next button ends here /////////////////////////////////////////////
 
@@ -78,6 +79,7 @@ const preBtn = () => {
     music.play();
     toggleBtn.classList.remove('fa-play');
     toggleBtn.classList.add('fa-pause-circle');
+    audioImage.classList.remove('rotation')
 
 }
 //////////////////////////////////////////// prev button ends here /////////////////////////////////////////////
