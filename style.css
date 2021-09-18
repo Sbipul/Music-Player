@@ -36,7 +36,6 @@ a{
     font-size: 3rem;
     color: rgb(247, 52, 149);
     padding: 1rem;
-    transition: 2s;
 }
 .Image {
     height: 280px;
@@ -58,6 +57,18 @@ ul{
     list-style: none;
     padding: 0;
     margin: 0;
+}
+.eachSong{
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+.eachSong:hover {
+    background: rgb(19, 169, 255);
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
 }
 @media only screen and (max-width: 600px) {
     .card {

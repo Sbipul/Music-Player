@@ -40,7 +40,7 @@
                                                 <a class="active" href="#" onclick="soft()">Soft</a>
                                             </li>
                                             <li class="me-4">
-                                                <a class="text-light" href="#" onclick="metal()">Rock</a>
+                                                <a class="text-light" href="#" onclick="rock()">Rock</a>
                                             </li>
                                             <li class="">
                                                 <a class="text-light" href="#" onclick="metal()">Metal</a>
@@ -52,7 +52,10 @@
                                 <img id="Image" src="img/alo alo.jpg" alt="...">
                             </div>
                             <div class="cardBody mt-5">
-                                <p id="songName" class="text-center text-light">aud/Alo-Alo_Tahsan.mp3</p>
+                                <div class="d-flex align-items-center justify-content-between px-5">
+                                    <p><span id="songName" class="text-light">aud/Alo-Alo_Tahsan.mp3</span> </p>
+                                    <p class="text-light" onclick="showList()"><i class="fas fs-4 fa-list-ul"></i></p>
+                                </div>
                                 <div class="d-flex align-items-center justify-content-between px-3">
                                     <i class="fas fa-chevron-circle-left icon" onclick="preBtn()"></i>
                                     <i id="toggleBtn" class="fas fa-play icon2" onclick="playAudio()"></i>
