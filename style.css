@@ -29,7 +29,7 @@ a{
     font-size: 3rem;
     color: rgb(151, 46, 199);
     padding: 1rem;
-    box-shadow: 5px 5px 25px black,-5px -5px 25px white;
+    box-shadow: 5px 5px 25px rgb(255, 255, 255),-5px -5px 25px white;
     border-radius: 50%;
 }
 .icon2 {
@@ -41,9 +41,16 @@ a{
     height: 280px;
     width: 280px;
     margin: 0 auto;
+    margin-top: 32px;
+}
+.audioImageContainer{
+    height: 280px;
+    width: 280px;
+    margin: 0 auto;
     overflow: hidden;
     border-radius: 100%;
-    margin-top: 32px;
+    height: 280px;
+    width: 280px;
 }
 #Image {
     width: 100%;
@@ -69,6 +76,9 @@ ul{
     padding: 5px 10px;
     border-radius: 5px;
     width: 100%;
+}
+#listOff{
+    display: none;
 }
 @media only screen and (max-width: 600px) {
     .card {

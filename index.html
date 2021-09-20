@@ -48,21 +48,38 @@
                                     </div>
                                 
                             <!-- nav bar ends  -->
+
+
+                            <!-- circle image start -->
                             <div class="Image">
-                                <img id="Image" src="img/alo alo.jpg" alt="...">
+                                <div class='audioImageContainer'>
+                                    <img id="Image" src="img/alo alo.jpg" alt="...">
+                                </div>
+                                <div id="songList"></div>
                             </div>
+                            <!-- circle image end -->
+
+
+                            <!-- body of this player start  -->
                             <div class="cardBody mt-5">
                                 <div class="d-flex align-items-center justify-content-between px-5">
                                     <p><span id="songName" class="text-light">aud/Alo-Alo_Tahsan.mp3</span> </p>
-                                    <p class="text-light" onclick="showList()"><i class="fas fs-4 fa-list-ul"></i></p>
+                                    <div>
+                                        <p id="listOn" class="text-light" onclick="showList()"><i class="fas fs-4 fa-list-ul"></i></p>
+                                        <p id="listOff" class="text-light" onclick="hideList()"><i class="fas fs-4 fa-times"></i></p>
+                                    </div>
                                 </div>
+
+                                <!-- controls button starts  -->
                                 <div class="d-flex align-items-center justify-content-between px-3">
                                     <i class="fas fa-chevron-circle-left icon" onclick="preBtn()"></i>
                                     <i id="toggleBtn" class="fas fa-play icon2" onclick="playAudio()"></i>
                                     <i class="fas fa-chevron-circle-right icon" onclick="nextBtn()"></i>
                                 </div>
+                                <!-- controls button starts  -->
                                 <audio id="audioPlayer" src="aud/Alo-Alo_Tahsan.mp3"></audio>
                             </div>
+                            <!-- body of this player end  -->
                         </div>
                     </div>
                 </div>
@@ -70,8 +87,6 @@
         </section>
     </main>
     <!-- main area end  -->
-
-
 
 
 
